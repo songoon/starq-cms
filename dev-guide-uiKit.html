@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<title>UI KIT - STAR㉪ CMS</title>
+		<script type="text/javascript" src="resources/js/write-resources.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="header">
+				<div class="gnb">
+					<div class="gnb-identity-wrap">
+						<div class="gnb-sidebar-open">
+							<a id="gnb-sidebar-open-a">
+								<span class="gnb-sidebar-open-icon"></span>
+							</a>
+						</div>
+						<div class="gnb-logo">
+							<a href="#"><span>Logo or Name</span></a>
+						</div>
+						<div class="gnb-slogan">
+							<span>#Service Slogan</span>
+						</div>
+						<div class="gnb-slogan-img">
+							<img class="img-circle" src="resources/images/emoticon-gnb-slogan.png">
+						</div>
+					</div>
+					<div class="gnb-menu-wrap">
+						<div class="gnb-menu">
+							<ul class="gnb-menu-1d gnb-search-open">
+								<li>
+									<a id="gnb-search-open-a" href="#">
+										<span class="icon fa fa-search"></span>
+									</a>
+								</li>
+							</ul>
+							<ul class="gnb-menu-1d">
+								<li>
+									<a href="#">
+										<span class="icon fa fa-external-link-square"></span>
+										<span class="menu-title">menu-1d</span>
+									</a>
+									<ul class="gnb-menu-2d">
+										<li><a href="#"><span>menu-2depth</span></a></li>
+										<li><a href="#"><span>menu-2depth</span></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="gnb-search-wrap">
+						<table class="gnb-search-bar">
+							<tbody>
+								<tr>
+									<td class="gnb-search-bar-option">
+										<div class="gnb-search-bar-option-select-wrap">
+											<select>
+												<optgroup label = "group">
+													<option>option value</option>
+												</optgroup>	
+											</select>
+										</div>
+									</td>
+									<td class="gnb-search-bar-input">
+										<input type="search" placeholder="search" />
+									</td>
+									<td class="gnb-search-bar-btn">
+										<button type="button"><span class="icon fa fa-search"></span></button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div id="container">			
+				<!--sidebar start-->
+				<div id="sidebar" class="sidebar-scroll">
+					<div class="sidebar-close">
+						<a id="sidebar-close-a">
+							<span class="sidebar-close-icon"></span>
+						</a>
+					</div>
+					<div class="lnb">
+						<div class="lnb-menu">
+							<div class="lnb-menu-group">
+								<h3>menu-group</h3>
+								<ul class="lnb-menu-1d">
+									<li>
+										<a href="#">
+											<span class="icon fa fa-line-chart"></span>
+											<span class="menu-title">menu-1depth</span>
+											<span class="lnb-menu-alarm">123</span>
+										</a>
+									</li>
+									<li>
+										<a class="include-2d" href="#">
+											<span class="icon fa fa-line-chart"></span>
+											<span class="menu-title">menu-1depth</span>
+										</a>
+										<ul class="lnb-menu-2d">
+											<li>
+												<a href="#">
+													<span>menu-2depth</span>
+													<span class="lnb-menu-alarm">123</span>
+												</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="lnb-menu-group">
+								<h3>menu-group selected</h3>
+								<ul class="lnb-menu-1d">
+									<li>
+										<a class="selected" href="#">
+											<span class="icon fa fa-line-chart"></span>
+											<span class="menu-title">menu-1depth</span>
+										</a>
+									</li>
+									<li>
+										<a class="include-2d" href="#">
+											<span class="icon fa fa-line-chart"></span>
+											<span class="menu-title">menu-1depth</span>
+										</a>
+										<ul class="lnb-menu-2d opened">
+											<li>
+												<a href="#">
+													<span>menu-2depth</span>
+												</a>
+											</li>
+											<li>
+												<a class="selected" href="#">
+													<span>menu-2depth</span>
+												</a>
+											</li>							
+										</ul>
+									</li>
+								</ul>
+							</div>	
+						</div>
+	                </div>
+	                <div class="sidebar-footer">
+                		<div class="footer-wrap">
+                			<p class="copyright">
+        				        <span class="icon fa fa-copyright"></span>
+        				        <span>2016 SCENAPPS.M INC</span>
+        				    </p>
+                		</div>
+                	</div>
+				</div>
+				<!--sidebar end-->
+				<!--contents start-->
+				<div id="contents">
+					<div class="con-wrap">
+						<div class="con-header">
+								<h1>
+									<span class="depth-item">
+										<span>Dev Guide</span>
+										<span>UI KIT</span>
+									</span>
+								</h1>
+								<h4>This is user interface kit for programing.</h4>
+						</div>
+						<div class="con-body">
+							<div class="con-sector">
+								<h3>layer-progress</h3>
+								<p class="font-ml">
+									<a id="layer-progress-open">layer-progress</a> (로딩 icon)
+									<script type="text/javascript">
+										$(function(){
+											$("#layer-progress-open").click(function(){
+												$("#layer-progress").css('display', 'inherit');
+										    });
+										});
+									</script>
+								</p>
+							</div>
+							<div class="con-sector">
+								<h3>layer-sample</h3>
+								<p class="font-ml">
+									<a id="layer-alert-sample-open">layer-alert-sample</a> (알림)
+									<script type="text/javascript">
+										$(function(){
+											$("#layer-alert-sample-open").click(function(){
+												$("#layer-alert-sample").fadeIn("fast");
+										    });
+										});
+									</script>
+								</p>
+								<p class="font-ml">
+									<a id="layer-dialog-sample-open">layer-dialog-sample</a> (확인)
+									<script type="text/javascript">
+										$(function(){
+											$("#layer-dialog-sample-open").click(function(){
+												$("#layer-dialog-sample").fadeIn("fast");
+										    });
+										});
+									</script>
+								</p>
+								<p class="font-ml">
+									<a id="layer-detail-sample-open">layer-detail-sample</a> (상세)
+									<script type="text/javascript">
+										$(function(){
+											$("#layer-detail-sample-open").click(function(){
+												$("#layer-detail-sample").show();
+												$("#layer-detail-sample").animate({right:'0'});
+										    });
+										});
+									</script>
+								</p>
+							</div>
+							<div class="con-sector">
+								<h3>font style</h3>
+								<div class="item-box">
+									<p class="inherit">
+										<h1>h1</h1>
+										<h2>h2</h2>
+										<h3>h3 (콘텐츠 영역 구분 con-sector의 제목으로 사용)</h3>
+										<h4>h4</h4>
+										<h5>h5</h5>
+										<h6>h6</h6>
+										<span class="font-ll">font-ll</span></br>
+										<span class="font-lm">font-lm</span></br>
+										<span class="font-ls">font-ls</span></br>
+										<span class="font-ml">font-ml</span></br>
+										<span class="font-mm">font-mm (미지정 기본 크기와 같음)</span></br>
+										<span class="font-ms">font-ms</span></br>
+										<span class="font-sl">font-sl</span></br>
+										<span class="font-sm">font-sm</span></br>
+										<span class="font-ss">font-ss</span>
+									<p>
+								</div>
+							</div>
+							<div class="con-sector">
+								<h3>color set</h3>
+								<table class="table">
+									<thead>
+										<tr>
+											<th class="sub-info">hsla</th>
+											<th class="w-ms">red (h=0)</th>
+											<th class="w-ms">yellow (h=50)</th>
+											<th class="w-ms">green (h=180)</th>
+											<th class="w-ms">blue (h=200)</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="sub-info">hsla(h,90%,50%,1)</td>
+											<td><span style="background:#F20D0D;">#F20D0D</span></td>
+											<td><span style="background:#F2CC0D;">#F2CC0D</span></td>
+											<td><span style="background:#0DF2F2;">#0DF2F2</span></td>
+											<td><span style="background:#0DA6F2;">#0DA6F2</span></td>
+										</tr>
+										<tr>
+											<td class="sub-info">hsla(h,90%,90%,1)</td>
+											<td><span style="background:#FCCFCF;">#FCCFCF</span></td>
+											<td><span style="background:#FCF5CF;">#FCF5CF</span></td>
+											<td><span style="background:#CFFCFC;">#CFFCFC</span></td>
+											<td><span style="background:#CFEDFC;">#CFEDFC</span></td>
+										</tr>
+										<tr>
+											<td class="sub-info">hsla(h,70%,70%,1)</td>
+											<td><span style="background:;"></span></td>
+											<td><span style="background:;"></span></td>
+											<td><span style="background:;"></span></td>
+											<td><span style="background:#7DC4E8;">#7DC4E8</span></td>
+										</tr>
+										<tr>
+											<td class="sub-info">hsla(h,60%,60%,1)</td>
+											<td><span style="background:#D65C5C;">#D65C5C</span></td>
+											<td><span style="background:#D6C25C;">#D6C25C</span></td>
+											<td><span style="background:#5CD6D6;">#5CD6D6</span></td>
+											<td><span style="background:#5CADD6;">#5CADD6</span></td>
+										</tr>
+										<tr>
+											<td class="sub-info">hsla(h,50%,50%,1)</td>
+											<td><span style="background:#BF4040;">#BF4040</span></td>
+											<td><span style="background:#BFAA40;">#BFAA40</span></td>
+											<td><span style="background:#40BFBF;">#40BFBF</span></td>
+											<td><span style="background:#4095BF;">#4095BF</span></td>
+										</tr>
+										<tr>
+											<td class="sub-info">hsla(h,40%,40%,1)</td>
+											<td><span style="background:#8F3D3D;">#8F3D3D</span></td>
+											<td><span style="background:#8F813D;">#8F813D</span></td>
+											<td><span style="background:#3D8F8F;">#3D8F8F</span></td>
+											<td><span style="background:#3D748F;">#3D748F</span></td>
+										</tr>
+										<tr>
+											<td class="sub-info">hsla(h,35%,35%,1)</td>
+											<td><span style="background:#783A3A;">#783A3A</span></td>
+											<td><span style="background:#786E3A;">#786E3A</span></td>
+											<td><span style="background:#3A7878;">#3A7878</span></td>
+											<td><span style="background:#3A6478;">#3A6478</span></td>
+										</tr>
+										<tr>
+											<td class="sub-info">hsla(h,30%,30%,1)</td>
+											<td><span style="background:#633636;">#633636</span></td>
+											<td><span style="background:#635C36;">#635C36</span></td>
+											<td><span style="background:#366363;">#366363</span></td>
+											<td><span style="background:#365463;">#365463</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="con-sector">
+								<h3>input, select, button</h3>
+								<p class="info-message">width class="w-ss,sm,sl,ms,mm,ml,ls,lm,ll" / height class="h-ss,sm,sl,ms,mm,ml,ls,lm,ll"</p>
+								<ul class="label-box">
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">radio, checkbox</div>
+											<div class="label-box-item-desc">
+												<p>
+													<input type="radio" checked="checked" /><label>radio</label>
+													<input type="radio" /><label>radio2</label>
+												</p>
+												<p>
+													<input type="checkbox" checked="checked" /><label>checkbox</label>
+													<input type="checkbox" /><label>checkbox2</label>
+												</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">input</div> 
+											<div class="label-box-item-desc">
+												<p><input type="text" class="w-sm h-sm"/></p>
+												<p><input type="text" class="w-mm"/></p>
+												<p><input type="text" class="w-lm h-lm"/></p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">file-input</div> 
+											<div class="label-box-item-desc">
+												<p><input type="file" class="file-input"/></p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">textarea</div>
+											<div class="label-box-item-desc">
+												<p><textarea rows="3" cols class="w-ll"></textarea></p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">select</div>
+											<div class="label-box-item-desc">
+												<p><select class="w-sm h-sm"/><option>select</option></select></p>
+												<p><select class="w-mm h-mm"/><option>select</option></select></p>
+												<p><select class="w-lm h-lm"/><option>select</option></select></p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">button</div>
+											<div class="label-box-item-desc">
+												<p>
+													<button type="button" class="btn-common">btn-common</button>
+													<button type="button" class="btn-common">
+														<span class="icon fa fa-cloud-upload"></span>
+								            			<span>with icon</span>
+								            		</button>
+													<button type="button" class="btn-submit">btn-submit</button>
+													<button type="button" class="btn-cancel">btn-cancel</button>
+													<button type="button" class="btn-new">btn-new</button>
+													<button type="button" class="btn-modify">btn-modify</button>
+													<button type="button" class="btn-get">btn-get</button>
+												</p>
+												<p><button type="button" class="btn-common w-sm h-sm">small</button></p>
+												<p><button type="button" class="btn-common w-mm h-mm">medium</button></p>
+												<p><button type="button" class="btn-common w-lm h-lm">large</button></p>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="con-sector">
+								<h3>etc items</h3>
+								<ul class="label-box">
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">simple-list</div>
+											<div class="label-box-item-desc">
+  												<ul class="simple-list">
+  													<li>
+  														<span>item</span>
+  														<a><span class="simple-list-edit"></span></a>
+  														<a><span class="simple-list-remove"></span></a>
+  													</li>
+  													<li>
+  														<input type="text" class="h-ms" placeholder="item edit" />
+  														<button class="btn-submit h-ms">ok</button>
+  														<a><span class="simple-list-remove"></span></a>
+  													</li>
+  												</ul>
+							 				</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">tag-cloud</div>
+											<div class="label-box-item-desc">
+												<p class="tag-cloud">
+													<a><span class="tag">tag</span></a>
+													<a><span class="tag">tag-with-point</span><span class="tag-point">1</span></a>
+												<p class="tag-cloud tag-for-remove">
+													<a><span class="tag">tag-for-remove</span></a>
+													<a><span class="tag">tag-for-remove</span></a>
+												</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">datepicker-input</div>
+											<div class="label-box-item-desc">
+												<div class="datepicker">
+													<input type="text" class="datepicker-input w-sl" placeholder="yyyy.mm.dd" />
+													<span>~</span>
+													<input type="text" class="datepicker-input w-sl" placeholder="yyyy.mm.dd" />
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">datetimepicker-input</div>
+											<div class="label-box-item-desc">
+												<div class="datepicker">
+													<input type="text" class="datetimepicker-input w-mm" placeholder="yyyy.mm.dd hh:mm" />
+													<span>~</span>
+													<input type="text" class="datetimepicker-input w-mm" placeholder="yyyy.mm.dd hh:mm" />
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">search-bar</div>
+											<div class="label-box-item-desc">
+												<table class="search-bar">
+													<tbody>
+														<tr>
+															<td class="search-bar-option">
+																<select>
+																	<option>select</option>
+																</select>
+															</td>
+															<td class="search-bar-input">
+																<input type="search" placeholder="search"/>
+															</td>
+															<td class="search-bar-btn">
+																<button type="button"><span class="icon fa fa-search"></span></button>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">auto-complete</div>
+											<div class="label-box-item-desc">
+												<ul class="item-group">
+													<li>
+														<div class="autocomplete">
+															<input type="text" class="autocomplete-input" placeholder="하나씩 Enter 입력" />
+															<ul class="autocomplete-result">
+																<li>tag</li>
+																<li>tag</li>
+																<li>tag</li>
+																<li>tag</li>
+																<li>tag</li>
+																<li>tag</li>
+															</ul>
+														</div>
+													</li>
+													<li>
+														<button type="button" class="btn-new">추가</button>
+													</li>
+												</ul>
+							 				</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="con-sector">
+								<h3>chart</h3>
+								<div class="chart-embed-wrap">
+									<div class="chart-embed-ratio">
+										<script type='text/javascript' src='resources/samples/highchart-sample.js'></script>
+										<div class="chart-embed-code" id="sample-chart"></div>
+									</div>
+								</div>
+							</div>
+							<div class="con-sector">
+								<h3>item-box</h3>
+									<div class="item-box">item</div>
+							</div>
+							<div class="con-sector">
+								<h3>item-panel</h3>
+									<div class="item-panel">item</div>
+							</div>
+					        <div class="con-sector">
+					    		<h3>tabs</h3>
+					    		<div class="tabs">
+									<ul class="tabs-menu">
+										<li><a rel="#tabs-content-1">tabs-menu-1</a></li>
+										<li><a rel="#tabs-content-2">tabs-menu-2</a></li>
+										<li><a rel="#tabs-content-3">tabs-menu-3</a></li>
+									</ul>
+									<div class="tabs-content" id="tabs-content-1">tabs-content-1</div>
+									<div class="tabs-content" id="tabs-content-2">tabs-content-2</div>
+									<div class="tabs-content" id="tabs-content-3">tabs-content-3</div>
+								</div>
+								<script type="text/javascript">
+									$(function(){
+										$(".tabs-menu li:first a").addClass("selected");
+										$(".tabs-content:not(:first)").hide();
+										
+										$(".tabs-menu li a").click(function(){
+											$(".tabs-menu li a").removeClass("selected");
+											$(this).addClass("selected");
+											$(".tabs-content").hide()
+											var selectedTabBody = $(this).attr("rel");
+											$(selectedTabBody).show();
+										});
+									});
+								</script>
+							</div>
+							<div class="con-sector">
+					    		<h3>con-body-tabs</h3>
+					    		<p class="info-message">전체 콘텐츠를 감싸는 tabs. con-body를 대체할 수 있음.</p>
+					    		<div class="con-header">
+									<h1>CMS Sample UI Kit</h1>
+									<h4>This is user interface kit for programing.</h4>
+								</div>
+					    		<div class="con-body-tabs">
+									<ul class="con-body-tabs-menu">
+										<li><a rel="#con-body-tabs-content-1">con-body-tabs-menu-1</a></li>
+										<li><a rel="#con-body-tabs-content-2">con-body-tabs-menu-2</a></li>
+										<li><a rel="#con-body-tabs-content-3">con-body-tabs-menu-3</a></li>
+									</ul>
+									<div class="con-body-tabs-content" id="con-body-tabs-content-1">con-body-tabs-content-1</div>
+									<div class="con-body-tabs-content" id="con-body-tabs-content-2">con-body-tabs-content-2</div>
+									<div class="con-body-tabs-content" id="con-body-tabs-content-3">con-body-tabs-content-3</div>
+								</div>
+						        <script>
+									$(function(){
+										$(".con-body-tabs-menu li:first a").addClass("selected");
+										$(".con-body-tabs-content:not(:first)").hide();
+										
+										$(".con-body-tabs-menu li a").click(function(){
+											$(".con-body-tabs-menu li a").removeClass("selected");
+											$(this).addClass("selected");
+											$(".con-body-tabs-content").hide()
+											var selectedTabBody = $(this).attr("rel");
+											$(selectedTabBody).show();
+										});
+									});
+							 	</script>
+					        </div>
+							<div class="con-sector">
+								<h3>label-box</h3>
+								<p class="info-message">item-group-label width class="w-ss,sm,sl,ms,mm,ml,ls,lm,ll""</p>
+								<ul class="label-box">
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">label-box-item-label</div>
+											<div class="label-box-item-desc">
+												<p>item-decription</p>
+												<p>item-decription</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">label-box-item-label</div>
+											<div class="label-box-item-desc">
+												<p class="item-group">
+													<span class="item-group-label">item-group-label</span>
+													<span class="item-group-desc">item-decription</span>
+												</p>
+												<p class="item-group">
+													<span class="item-group-label">item-group-label</span>
+													<span class="item-group-desc">item-decription</span>
+												</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="con-sector">
+								<h3>table</h3>
+								<p class="info-message">td width class="w-ss,sm,sl,ms,mm,ml,ls,lm,ll"</p>
+								<table class="table">
+									<thead>
+										<tr>
+											<th class="w-ss"><input type="checkbox" /></th>
+											<th class="w-sl">preview</th>
+											<th>title</th>
+											<th class="w-sl">id</th>
+											<th class="w-sl sub-info">duration</th>
+											<th class="w-mm sub-info">date</th>
+											<th class="w-mm sub-info">modify</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="status-active">
+											<td><input type="checkbox" /></td>
+											<td class="video-thumbnail">
+												<div class="img-embed-wrap">
+													<img src="http://timgs.wecandeo.com/thumb/36/20151104/22/1452_a82cc_00001.jpg" />
+												</div>
+											</td>
+											<td>
+												<a href="#">IU Harakeke (활성)</a>
+												<p class="td-desc sub-info">
+													<span>td-desc-span</span>
+													<span>td-desc-span</span>
+												</p>
+											</td>
+											<td>123456789</td>
+											<td class="sub-info">hh:mm:ss</td>
+											<td class="sub-info">YY-MM-DD hh:mm:ss</td>
+											<td class="sub-info">
+												<button type="button" class="btn-modify h-sl">edit</button>
+												<button type="button" class="btn-get h-sl">get code</button>
+											</td>
+										</tr>
+										<tr class="status-standby">
+											<td><input type="checkbox" /></td>
+											<td class="video-thumbnail">
+												<div class="img-embed-wrap">
+													<img src="http://timgs.wecandeo.com/thumb/179/20160427/12/1534_4c9b8_00000_320_180.jpg" />
+												</div>
+											</td>
+											<td>
+												<a href="#">IU Harakeke (대기)</a>
+												<p class="td-desc sub-info">
+													<span>td-desc-span</span>
+													<span>td-desc-span</span>
+												</p>
+											</td>
+											<td>123456789</td>
+											<td class="sub-info">hh:mm:ss</td>
+											<td class="sub-info">YY-MM-DD hh:mm:ss</td>
+											<td class="sub-info">
+												<button type="button" class="btn-modify h-sl">edit</button>
+												<button type="button" class="btn-get h-sl">get code</button>
+											</td>
+										</tr>
+										<tr class="status-inactive">
+											<td><input type="checkbox" /></td>
+											<td class="video-thumbnail">
+												<div class="img-embed-wrap">
+													<img src="http://timgs.wecandeo.com/thumb/179/20160715/23/2003_08664_00000_320_180.jpg" />
+												</div>
+											</td>
+											<td><a href="#">IU Harakeke (비활성)</a></td>
+											<td>123456789</td>
+											<td class="sub-info">hh:mm:ss</td>
+											<td class="sub-info">YY-MM-DD hh:mm:ss</td>
+											<td class="sub-info">
+												<button type="button" class="btn-modify h-sl">edit</button>
+												<button type="button" class="btn-get h-sl">get code</button>
+											</td>
+										</tr>
+										<tr class="status-uncooked">
+											<td><input type="checkbox" /></td>
+											<td class="video-thumbnail">
+												<div class="img-embed-wrap">
+													<img src="http://timgs.wecandeo.com/thumb/36/20151104/22/1452_a82cc_00001.jpg" />
+												</div>
+											</td>
+											<td>
+												<a href="#">IU Harakeke (미입력)</a>
+											</td>
+											<td>123456789</td>
+											<td class="sub-info">hh:mm:ss</td>
+											<td class="sub-info">YY-MM-DD hh:mm:ss</td>
+											<td class="sub-info">
+												<button type="button" class="btn-modify h-sl">edit</button>
+												<button type="button" class="btn-get h-sl">get code</button>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<table class="table table-no-data">
+									<tbody>
+										<tr>
+											<td class="alert-message">there is no data. try again.</td>
+										</tr>
+									</tbody>
+								</table>
+								<p class="info-message">class="table-report"</p>
+								<table class="table table-report">
+									<thead>
+										<tr>
+											<th class="t-label">date</th>
+											<th class="w-sl">column</th>
+											<th class="w-sl">column</th>
+											<th class="w-sl t-dec sub-info">decrease</th>
+											<th class="w-sl t-inc sub-info">increase</th>
+										</tr>
+									</thead>
+									<tfoot>
+										<tr>
+											<td class="t-label">avg</a></td>
+											<td>123,456,789</td>
+											<td>123,456,789</td>
+											<td class="t-dec sub-info">123,456,789</td>
+											<td class="t-inc sub-info">123,456,789</td>
+										</tr>
+										<tr>
+											<td class="t-label">total</a></td>
+											<td>123,456,789</td>
+											<td>123,456,789</td>
+											<td class="t-dec sub-info">123,456,789</td>
+											<td class="t-inc sub-info">123,456,789</td>
+										</tr>
+									</tfoot>									
+									<tbody>
+										<tr>
+											<td class="t-label"><a href="#">2015-12-07</a></td>
+											<td>123,456,789</td>
+											<td>123,456,789</td>
+											<td class="t-dec sub-info">123,456,789</td>
+											<td class="t-inc sub-info">123,456,789</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="con-sector">
+								<h3>con-list (responsive / video-type)</h3>
+								<div class="con-list">
+									<ul class="con-list-video-type">
+										<li>
+											<div class="con-list-item">
+												<div class="con-list-item-check">
+													<input type="checkbox" />
+												</div>
+												<div class="con-list-item-img">
+													<div class="img-embed-wrap">
+														<div class="img-embed-ratio">
+															<img class="img-embed-code" src="http://timgs.wecandeo.com/thumb/36/20151104/22/1452_a82cc_00001.jpg" />
+														</div>
+													</div>
+												</div>
+												<div class="con-list-item-info">
+													<p class="con-list-item-info-title">
+														<a href="#">title 1</a> 
+													</p>
+													<p class="con-list-item-info-desc">
+														<span>subinfo1</span>
+														<span>subinfo1</span>
+													</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="con-list-item">
+												<div class="con-list-item-check">
+													<input type="checkbox" />
+												</div>
+												<div class="con-list-item-img">
+													<div class="img-embed-wrap">
+														<div class="img-embed-ratio">
+															<img class="img-embed-code" src="http://timgs.wecandeo.com/thumb/36/20151104/22/1452_a82cc_00001.jpg" />
+														</div>
+													</div>
+												</div>
+												<div class="con-list-item-info">
+													<p class="con-list-item-info-title">
+														<a href="#">title 2 title 2 title 2 title 2 title 2 title 2 title 2 title 2 title 2 title 2 title 2 title 2 </a> 
+													</p>
+													<p class="con-list-item-info-desc">
+														<span>subinfo1 subinfo1 subinfo1 subinfo1 subinfo1 subinfo1 subinfo1 subinfo1 subinfo1 subinfo1 subinfo1</span>
+														<span>subinfo1</span>
+													</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="con-sector">
+								<h3>list options</h3>
+								<div class="list-option">
+									<ul class="list-option-filter">
+										<li>
+											<select>
+												<option>select</option>
+											</select>
+										</li>
+										<li>
+											<div class="datepicker">
+												<input type="text" class="datepicker-input w-sl" placeholder="yyyy-mm-dd" />
+												<span>~</span>
+												<input type="text" class="datepicker-input w-sl" placeholder="yyyy-mm-dd" />
+											</div>
+										</li>
+										<li>
+											<table class="search-bar">
+												<tbody>
+													<tr>
+														<td class="search-bar-option">
+															<select>
+																<option>select</option>
+															</select>
+														</td>
+														<td class="search-bar-input">
+															<input type="search" placeholder="keyword"/>
+														</td>
+														<td class="search-bar-btn">
+															<button type="button"><span class="icon fa fa-search"></span></button>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</li>
+										<li>
+											<button type="button" class="btn-submit">filter apply</button>
+										</li>
+									</ul>
+									<ul class="list-option-filter-board">
+										<li class="status-all">
+											<span>전체</span>
+											<span><a href="#">1,234</a></span>
+										</li>
+										
+										<li class="status-active">
+											<span>배포</span>
+											<span><a href="#">1,234</a></span>
+										</li>
+										<li class="status-standby">
+											<span>대기</span>
+											<span><a href="#">1,234</a></span>
+										</li>
+										<li class="status-inactive">
+											<span>중단</span>
+											<span><a href="#">1,234</a></span>
+										</li>
+										<li class="status-uncooked">
+											<span>미입력</span>
+											<span><a href="#">1,234</a></span>
+										</li>
+									</ul>
+									<ul class="list-option-action">
+										<li>
+											<button type="button" class="btn-new">
+												<span class="icon fa fa-plus"></span>
+						            			<span>add</span>
+											</button>
+										</li>
+										<li>
+											<button type="button" class="btn-cancel">
+												<span class="icon fa fa-times"></span>
+						            			<span>remove</span>
+											</button>
+										</li>
+										<li>
+											<button type="button" class="btn-modify">
+												<span class="icon fa fa-pencil"></span>
+						            			<span>modify</span>
+											</button>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="con-sector">
+								<h3>pagenation</h3>
+								<div class="pagenation">
+									<ul>
+										<li>
+											<select>
+												<option>10s</option>
+												<option selected>20s</option>
+												<option>50s</option>
+												<option>100s</option>
+											</select>
+										</li>
+										<li><button type="button" class="btn-common"><</button></li>
+										<li><button type="button" class="btn-common">1</button></li>
+										<li><button type="button" class="btn-common">2</button></li>
+										<li><button type="button" class="btn-common selected">3</button></li>
+										<li><button type="button" class="btn-common">4</button></li>
+										<li><button type="button" class="btn-common">5</button></li>
+										<li><button type="button" class="btn-common">></button></li>
+									</ul>
+								</div>
+							</div>
+							<div class="con-sector">
+								<h3>pagenation-more-list</h3>
+								<div class="pagenation-more-list">
+									<select>
+										<option>10s</option>
+										<option selected>20s</option>
+										<option>50s</option>
+										<option>100s</option>
+									</select>
+									<button type="button" class="btn-common">
+										<span class="icon fa fa-plus"></span>
+										<span>more</span>
+									</button>
+								</div>
+							</div>
+							<div class="con-sector">
+								<h3>submit</h3>
+								<ul class="submit">
+									<li><button type="button" class="btn-submit w-ms h-ml">Save</button></li>
+									<li><button type="button" class="btn-cancel w-ms h-ml">Cancel</button></li>
+								</ul>
+							</div>
+							<div class="con-sector">
+								<h3>grid</h3>
+								<p class="info-message">grid-2n</p>
+								<div class="grid">
+									<ul class="grid-2n">
+										<li class="item-panel">1</li>
+										<li class="item-panel">2</li>
+									</ul>
+								</div>
+								<p class="info-message">grid-3n</p>
+								<div class="grid">
+									<ul class="grid-3n">
+										<li class="item-panel">1</li>
+										<li class="item-panel">2</li>
+										<li class="item-panel">3</li>
+									</ul>
+								</div>
+								<p class="info-message">grid-4n</p>
+								<div class="grid">
+									<ul class="grid-4n">
+										<li class="item-panel">1</li>
+										<li class="item-panel">2</li>
+										<li class="item-panel">3</li>
+										<li class="item-panel">4</li>
+									</ul>
+								</div>
+								<p class="info-message">grid-6n</p>
+								<div class="grid">
+									<ul class="grid-6n">
+										<li class="item-panel">1</li>
+										<li class="item-panel">2</li>
+										<li class="item-panel">3</li>
+										<li class="item-panel">4</li>
+										<li class="item-panel">5</li>
+										<li class="item-panel">6</li>
+									</ul>
+								</div>
+							</div>
+							<div class="con-sector">
+								<h3>sortable</h3>
+								<p class="info-message">ul에 적용</p>
+								<ul class="sortable">
+								  <li class="item-panel"><a href="#">item 1</a></li>
+								  <li class="item-panel">Item 2</li>
+								  <li class="item-panel">Item 3</li>
+								</ul>
+							</div>
+							<div class="con-sector">
+								<h3>sortable table rows</h3>
+								<p class="info-message">ul에 적용</p>
+								<table class="table sortable-table-rows">
+									<thead>
+										<tr>
+											<th>column</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>item 1</td>
+										</tr>
+										<tr>
+											<td>item 2</td>
+										</tr>
+										<tr>
+											<td>item 3</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+							<div class="con-sector">
+								<h3>con-list + sortable + grid</h3>
+								<div class="con-list grid">
+									<ul class="con-list-video-type sortable grid-3n">
+										<li>
+											<div class="con-list-item">
+												<div class="con-list-item-check">
+													<input type="checkbox" />
+												</div>
+												<div class="con-list-item-img">
+													<div class="img-embed-wrap">
+														<div class="img-embed-ratio">
+															<img class="img-embed-code" src="http://timgs.wecandeo.com/thumb/36/20151104/22/1452_a82cc_00001.jpg" />
+														</div>
+													</div>
+												</div>
+												<div class="con-list-item-info">
+													<p class="con-list-item-info-title">
+														<a href="#">title 1</a> 
+													</p>
+													<p class="con-list-item-info-desc">
+														<span>subinfo1</span>
+														<span>subinfo2</span>
+													</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="con-list-item">
+												<div class="con-list-item-check">
+													<input type="checkbox" />
+												</div>
+												<div class="con-list-item-img">
+													<div class="img-embed-wrap">
+														<div class="img-embed-ratio">
+															<img class="img-embed-code" src="http://timgs.wecandeo.com/thumb/36/20151104/22/1452_a82cc_00001.jpg" />
+														</div>
+													</div>
+												</div>
+												<div class="con-list-item-info">
+													<p class="con-list-item-info-title">
+														<a href="#">title 2</a> 
+													</p>
+													<p class="con-list-item-info-desc">
+														<span>subinfo1</span>
+														<span>subinfo2</span>
+													</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="con-list-item">
+												<div class="con-list-item-check">
+													<input type="checkbox" />
+												</div>
+												<div class="con-list-item-img">
+													<div class="img-embed-wrap">
+														<div class="img-embed-ratio">
+															<img class="img-embed-code" src="http://timgs.wecandeo.com/thumb/36/20151104/22/1452_a82cc_00001.jpg" />
+														</div>
+													</div>
+												</div>
+												<div class="con-list-item-info">
+													<p class="con-list-item-info-title">
+														<a href="#">title 3</a> 
+													</p>
+													<p class="con-list-item-info-desc">
+														<span>subinfo1</span>
+														<span>subinfo2</span>
+													</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> <!--contents end-->
+			</div>
+			<div id="footer">
+				<div id="layer-progress" class="layer-progress">
+					<div class="layer-wrap">
+						<div class="layer-box">	
+							<div class="layer-body">
+								<div class="con-sector">
+									<img src="resources/images/emoticon-layer-progress.gif">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--layer-alert-sample start-->
+			<div id="layer-alert-sample" class="layer-alert">
+				<div class="layer-wrap">
+					<div class="layer-box w-ls">
+						<div class="layer-close">
+							<a id="layer-alert-sample-close"><span class="layer-close-icon"></span></a>
+							<script type="text/javascript">
+								$(function(){
+									$("#layer-alert-sample-close").click(function(){
+										$("#layer-alert-sample").fadeOut("fast");
+								    });
+								});
+							</script>
+						</div>	
+						<div class="layer-body">
+							<div class="con-sector">
+								<p class="alert-message">width class=layer-box w-ms,mm,ml,ls,lm,ll</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--layer-alert-sample end-->
+			
+			<!--layer-dialog-sample start-->
+			<div id="layer-dialog-sample" class="layer-dialog">
+				<div class="layer-wrap">
+					<div class="layer-box w-lm">
+						<div class="layer-close">
+							<a id="layer-dialog-sample-close"><span class="layer-close-icon"></span></a>
+							<script type="text/javascript">
+								$(function(){
+									$("#layer-dialog-sample-close").click(function(){
+										$("#layer-dialog-sample").fadeOut("fast");
+								    });
+								});
+							</script>
+						</div>
+						<div class="layer-body">
+							<div class="con-sector">
+								<h3>dialog title</h3>
+								<p class="info-message">width class=layer-box w-ms,mm,ml,ls,lm,ll</p>
+								<p class="alert-message">width class=layer-box w-ls,lm,ll,xls,xlm,xll</p>
+								<p class="warning-message">width class=layer-box w-ls,lm,ll,xls,xlm,xll</p>
+								<ul class="submit">
+									<li><button type="button" class="btn-submit">OK</button></li>
+									<li><button type="button" class="btn-cancel">Cancel</button></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--layer-dialog-sample end-->
+			
+			<!--layer-detail-sample start-->
+			<div id="layer-detail-sample" class="layer-detail">
+				<div class="layer-wrap">
+					<div class="layer-box w-lm">
+						<div class="layer-close">
+							<a id="layer-detail-sample-close"><span class="layer-close-icon"></span></a>
+							<script type="text/javascript">
+								$(function(){
+									$("#layer-detail-sample-close").click(function(){
+										$("#layer-detail-sample").animate({right:'-100%'});
+										$("#layer-detail-sample").fadeOut("fast");
+								    });
+								});
+							</script>
+						</div>
+						<div class="layer-header">
+							<h2>layer-detail-title</h2> 
+						</div> 
+						<div class="layer-body">
+							<div class="con-sector">
+								<h3>layer-wrap</h3>
+								<p class="info-message">width class=layer-box w-ls,lm,ll,xls,xlm,xll</p>
+							</div>
+							<div class="con-sector">
+								<h3>video-player</h3>
+								<div class="video-player-space-wrap">
+			            			<div class="video-player-space-ratio">
+			            				<div class="video-player-embed-wrap">
+											<div class="video-player-embed-ratio">
+												 <iframe class="video-player-embed-code" src="https://www.youtube.com/embed/f4JJmDuv_C0" allowfullscreen="true" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+											</div>
+										</div>
+			            			</div>
+			            		</div>
+							</div>
+							<div class="con-sector">
+								<h3>label-box</h3>
+								<ul class="label-box">
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">id</div>
+											<div class="label-box-item-desc">
+												<p>123456789</p>
+							 				</div>
+										</div>
+									</li>
+								</ul>
+								<ul class="submit">
+									<li><button type="button" class="btn-submit w-ms h-ml">Save</button></li>
+									<li><button type="button" class="btn-cancel w-ms h-ml">Cancel</button></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--layer-detail-sample end-->
+		</div>
+	</body>
+</html>

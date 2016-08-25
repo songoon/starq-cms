@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<title>Manager - STAR㉪ CMS</title>
+		<script type="text/javascript" src="resources/js/write-resources.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="header">
+				<div class="gnb">
+					$gnb
+				</div>
+			</div>
+			<div id="container">
+				<!--sidebar start-->
+				<div id="sidebar" class="sidebar-scroll">
+					<div class="sidebar-close">
+						<a id="sidebar-close-a">
+							<span class="sidebar-close-icon"></span>
+						</a>
+					</div>
+					<div class="lnb">
+						$lnb
+	                </div>
+	                <div class="sidebar-footer">
+                		$sidebar footer
+                	</div>
+				</div>
+				<!--sidebar end-->
+				<!--contents start-->
+				<div id="contents">
+					<div class="con-wrap">
+						<div class="con-header">
+							<h1>
+								<span class="depth-item">
+									<span>Admin</span>
+									<span>Manager</span>
+								</span>
+							</h1>
+							<h4>CMS 운영자를 신규 등록 또는 수정할 수 있습니다.</h4>
+						</div>
+						<div class="con-body">
+							<div class="con-sector">
+								<h3>운영자 목록</h3>
+								<ul class="list-option-action">
+									<li>
+										<button type="button" class="btn-new">
+											<span class="icon fa fa-plus"></span>
+					            			<span>운영자 추가</span>
+										</button>
+									</li>
+									<li>
+										<button type="button" class="btn-cancel">
+											<span class="icon fa fa-times"></span>
+					            			<span>삭제</span>
+										</button>
+									</li>
+								</ul>
+								<table class="table">
+									<thead>
+										<tr>
+											<th class="w-ss"><input type="checkbox" /></th>
+											<th class="w-sl">운영자 No.</th>
+											<th>이메일</th>
+											<th class="w-ms sub-info">이름</th>
+											<th class="w-ms sub-info">구분</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><input type="checkbox" /></td>
+											<td>123456789</td>
+											<td><a href="#">songoon@scenappsm.com</a></td>
+											<td class="sub-info">손창욱</td>
+											<td class="sub-info">내부 운영</td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="pagenation">
+									<ul>
+										<li>
+											<select>
+												<option>10s</option>
+												<option selected>20s</option>
+												<option>50s</option>
+												<option>100s</option>
+											</select>
+										</li>
+										<li><button type="button" class="btn-common"><</button></li>
+										<li><button type="button" class="btn-common">1</button></li>
+										<li><button type="button" class="btn-common">2</button></li>
+										<li><button type="button" class="btn-common">3</button></li>
+										<li><button type="button" class="btn-common">4</button></li>
+										<li><button type="button" class="btn-common">5</button></li>
+										<li><button type="button" class="btn-common">></button></li>
+									</ul>
+								</div>
+							</div>
+							<div class="con-sector">
+								<h3>layer</h3>
+								<p class="font-ml">
+									<a id="layer-detail-sample-edit-manager-open">운영자 등록/수정 샘플 layer 열기</a>
+									<script type="text/javascript">
+										$(function(){
+											$("#layer-detail-sample-edit-manager-open").click(function(){
+												$("#layer-detail-sample-edit-manager").show();
+												$("#layer-detail-sample-edit-manager").animate({right:'0'});
+										    });
+										});
+									</script>
+								<p>
+							</div>
+						</div>
+					</div>
+				</div> <!--contents end-->
+			</div>
+			<div id="footer">
+				$footer
+			</div>
+			
+			<!--layer-detail-sample-edit-manager start-->
+			<div id="layer-detail-sample-edit-manager" class="layer-detail">
+				<div class="layer-wrap">
+					<div class="layer-box w-xls">
+						<div class="layer-close">
+							<a id="layer-detail-sample-edit-manager-close"><span class="layer-close-icon"></span></a>
+							<script type="text/javascript">
+								$(function(){
+									$("#layer-detail-sample-edit-manager-close").click(function(){
+										$("#layer-detail-sample-edit-manager").animate({right:'-100%'});
+										$("#layer-detail-sample-edit-manager").fadeOut("fast");
+								    });
+								});
+							</script>
+						</div>
+						<div class="layer-header">
+							<h2>운영자 등록/수정</h2> 
+						</div> 
+						<div class="layer-body">
+							<div class="con-sector">
+								<h3>정보 입력</h3>
+								<p class="info-message">* 표시 항목은 필수 입력</p>
+								<ul class="label-box">
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">운영자 No.</div>
+											<div class="label-box-item-desc">
+												<p>123456789</p>
+							 				</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">등록/수정일시</div>
+											<div class="label-box-item-desc">
+												<p class="item-group">
+													<span class="item-group-label">최초 등록</span>
+													<span class="item-group-desc">YY-MM-DD hh:mm:ss</span>
+												</p>
+												<p class="item-group">
+													<span class="item-group-label">최근 수정</span>
+													<span class="item-group-desc">YY-MM-DD hh:mm:ss</span>
+												</p>
+							 				</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">이메일 *</div>
+											<div class="label-box-item-desc">
+												<p><input type="text" class="w-ls"/></p>
+							 				</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">비밀번호 *</div>
+											<div class="label-box-item-desc">
+												<p class="item-group">
+													<input type="text" placeholder="입력"/>
+													<span class="alert-message">1234 이런거 하지말아요</span>
+												</p>
+												<p class="item-group">
+													<input type="text" placeholder="재입력 확인" />
+												</p>
+							 				</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">이름 *</div>
+											<div class="label-box-item-desc">
+												<p><input type="text" name=""/></p>
+							 				</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">운영자 구분 *</div>
+											<div class="label-box-item-desc">
+												<p>
+													<input type="radio" checked="checked" /><label>내부 운영</label>
+													<input type="radio"/><label>외부 제휴</label>
+												</p>
+							 				</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">메뉴 권한 *</div>
+											<div class="label-box-item-desc">
+												<ul class="depth-item">
+													<li>
+														<input type="checkbox"/>
+														<label>
+															<span>전체선택 (해제)</span>
+														</label>
+													</li>
+													<li>
+														<input type="checkbox"/>
+														<label>
+															<span>Admin</span>
+															<span>운영자 관리</span>
+														</label>
+													</li>
+													<li>
+														<input type="checkbox"/>
+														<label>
+															<span>Member</span>
+															<span>회원 관리</span>
+														</label>
+													</li>
+													<li>
+														<input type="checkbox"/>
+														<label>
+															<span>메뉴 다 써봐야</span>
+															<span>어차피 효댕느는</span>
+															<span>DB로 때려 넣겠지?</span>
+														</label>
+													</li>
+													<li>
+														<input type="checkbox"/>
+														<label>
+															<span>menu group</span>
+															<span>1depth</span>
+															<span>2depth</span>
+															<span>이렇게 넣어줘요</span>
+														</label>
+													</li>
+												</ul>
+							 				</div>
+										</div>
+									</li>
+								</ul>
+								<ul class="submit">
+									<li><button type="button" class="btn-submit w-ms h-ml">Save</button></li>
+									<li><button type="button" class="btn-cancel w-ms h-ml">Cancel</button></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--layer-detail-sample-edit-manager end-->
+		</div>
+	</body>
+</html>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<title>Ranking - STAR㉪ CMS</title>
+		<script type="text/javascript" src="resources/js/write-resources.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="header">
+				<div class="gnb">
+					$gnb
+				</div>
+			</div>
+			<div id="container">
+				<!--sidebar start-->
+				<div id="sidebar" class="sidebar-scroll">
+					<div class="sidebar-close">
+						<a id="sidebar-close-a">
+							<span class="sidebar-close-icon"></span>
+						</a>
+					</div>
+					<div class="lnb">
+						$lnb
+	                </div>
+	                <div class="sidebar-footer">
+                		$sidebar footer
+                	</div>
+				</div>
+				<!--sidebar end-->
+				<!--contents start-->
+				<div id="contents">
+					<div class="con-wrap">
+						<div class="con-header">
+							<h1>
+								<span class="depth-item">
+									<span>Service</span>
+									<span>Ranking</span>
+								</span>
+							</h1>
+							<h4>동영상 랭킹 메뉴를 관리합니다.</h4>
+						</div>
+						<div class="con-body-tabs">
+							<ul class="con-body-tabs-menu">
+								<li><a rel="#con-body-tabs-content-1">추천 영역 편성</a></li>
+								<li><a rel="#con-body-tabs-content-2">현재 랭킹 관리</a></li>
+							</ul>
+							<div class="con-body-tabs-content" id="con-body-tabs-content-1">
+								<div class="con-sector">
+									<h3>편성 목록</h3>
+									<div class="list-option">
+										<ul class="list-option-action">
+											<li>
+												<button type="button" class="btn-new">
+													<span class="icon fa fa-plus"></span>
+							            			<span>편성 추가</span>
+												</button>
+											</li>
+											<li>
+												<button type="button" class="btn-cancel">
+													<span class="icon fa fa-times"></span>
+							            			<span>삭제</span>
+												</button>
+											</li>
+										</ul>
+									</div>
+									<p class="info-message">
+										편성 순서에 따라 노출 순서가 결정됩니다. 마우스 드래그로 순서를 변경하세요. 
+									</p>
+									<p class="alert-message">
+										'노출'과 '대기' 상태 중, 랭킹 순위권에 진입하거나, 편성 종료시간이 지난 콘텐츠는 자동으로 '제외'처리됩니다. 
+									</p>
+									<p class="warning-message">
+										편성된 모든 영상이 '제외'처리되면 해당 영역이 노출되지 않습니다.
+									</p>
+									<table class="table sortable-table-rows">
+										<thead>
+											<tr>
+												<th class="w-ss"><input type="checkbox" /></th>
+												<th class="w-sl">편성 No.</th>
+												<th class="w-sl">이미지</th>
+												<th>동영상</th>
+												<th class="w-mm sub-info">자동 편성종료</th>
+												<th class="w-sl sub-info">현재 랭킹</th>
+												<th class="w-sm sub-info">상태</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="status-active">
+												<td><input type="checkbox" /></td>
+												<td>123456789</td>
+												<td class="video-thumbnail">
+													<div class="img-embed-wrap">
+														<img src="http://timgs.wecandeo.com/thumb/36/20151104/22/1452_a82cc_00001.jpg" />
+													</div>
+												</td>
+												<td>
+													<a href="#">123456789</a>
+													<p class="td-desc">
+														<span>IU Harakeke CF video</span>
+													</p>
+												</td>
+												<td class="sub-info">YY-MM-DD hh:mm</td>
+												<td class="sub-info">123</td>
+												<td class="sub-info">노출</td>
+											</tr>
+											<tr class="status-standby">
+												<td><input type="checkbox" /></td>
+												<td>123456789</td>
+												<td class="video-thumbnail">
+													<div class="img-embed-wrap">
+														<img src="http://timgs.wecandeo.com/thumb/36/20151104/22/1452_a82cc_00001.jpg" />
+													</div>
+												</td>
+												<td>
+													<a href="#">123456789</a>
+													<p class="td-desc">
+														<span>IU Harakeke CF video</span>
+													</p>
+												</td>
+												<td class="sub-info">YY-MM-DD hh:mm</td>
+												<td class="sub-info">123</td>
+												<td class="sub-info">대기</td>
+											</tr>
+											<tr class="status-inactive">
+												<td><input type="checkbox" /></td>
+												<td>123456789</td>
+												<td class="video-thumbnail">
+													<div class="img-embed-wrap">
+														<img src="http://timgs.wecandeo.com/thumb/36/20151104/22/1452_a82cc_00001.jpg" />
+													</div>
+												</td>
+												<td>
+													<a href="#">123456789</a>
+													<p class="td-desc">
+														<span>IU Harakeke CF video</span>
+													</p>
+												</td>
+												<td class="sub-info">YY-MM-DD hh:mm</td>
+												<td class="sub-info">123</td>
+												<td class="sub-info">제외</td>
+											</tr>
+											<tr class="status-standby">
+												<td><input type="checkbox" /></td>
+												<td>123456789</td>
+												<td class="video-thumbnail">
+													<div class="img-embed-wrap">
+														<img src="http://timgs.wecandeo.com/thumb/36/20151104/22/1452_a82cc_00001.jpg" />
+													</div>
+												</td>
+												<td>
+													<a href="#">123456789</a>
+													<p class="td-desc">
+														<span>IU Harakeke CF video</span>
+													</p>
+												</td><td class="sub-info">YY-MM-DD hh:mm</td>
+												<td class="sub-info">123</td>
+												<td class="sub-info">대기</td>
+											</tr>
+										</tbody>
+									</table>
+									<div class="pagenation-more-list">
+										<select>
+											<option>10s</option>
+											<option selected>20s</option>
+											<option>50s</option>
+											<option>100s</option>
+										</select>
+										<button type="button" class="btn-common">
+											<span class="icon fa fa-plus"></span>
+											<span>리스트 더보기</span>
+										</button>
+									</div>
+								</div>
+								<div class="con-sector">
+									<h3>layer</h3>
+									<p class="font-ml">
+										<a id="layer-detail-sample-edit-content-open">동영상 편성/수정 샘플 layer 열기</a>
+										<script type="text/javascript">
+											$(function(){
+												$("#layer-detail-sample-edit-content-open").click(function(){
+													$("#layer-detail-sample-edit-content").show();
+													$("#layer-detail-sample-edit-content").animate({right:'0'});
+											    });
+											});
+										</script>
+									</p>
+								</div>
+							</div>
+							<div class="con-body-tabs-content" id="con-body-tabs-content-2">
+								<div class="con-sector">
+									<h3>참고사항</h3>
+									<ul class="pure-ul">
+										<li>개발시 이 tab은 폭파시키세요.</li>
+										<li>여기가 Front의 서비스 메뉴를 관리하는 메뉴라면 나중에는 뭐 이런 것도 필요하지 않게 될까요?</li>
+										<li>랭킹에서 빼야하는 기능도 필요할지 모르고.</li>
+										<li>그래서 일단 여기를 con-body-tab으로 나눠 만듭니다.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<script>
+							$(function(){
+								$(".con-body-tabs-menu li:first a").addClass("selected");
+								$(".con-body-tabs-content:not(:first)").hide();
+								
+								$(".con-body-tabs-menu li a").click(function(){
+									$(".con-body-tabs-menu li a").removeClass("selected");
+									$(this).addClass("selected");
+									$(".con-body-tabs-content").hide()
+									var selectedTabBody = $(this).attr("rel");
+									$(selectedTabBody).show();
+								});
+							});
+					 	</script>
+					</div>
+				</div> <!--contents end-->
+			</div>
+			<div id="footer">
+				$footer
+			</div>
+			
+			<!--layer-detail-sample-edit-content start-->
+			<div id="layer-detail-sample-edit-content" class="layer-detail">
+				<div class="layer-wrap">
+					<div class="layer-box w-xls">
+						<div class="layer-close">
+							<a id="layer-detail-sample-edit-content-close"><span class="layer-close-icon"></span></a>
+							<script type="text/javascript">
+								$(function(){
+									$("#layer-detail-sample-edit-content-close").click(function(){
+										$("#layer-detail-sample-edit-content").animate({right:'-100%'});
+										$("#layer-detail-sample-edit-content").fadeOut("fast");
+								    });
+								});
+							</script>
+						</div>
+						<div class="layer-header">
+							<h2>동영상 편성 등록/수정</h2> 
+						</div> 
+						<div class="layer-body">
+							<div class="con-sector">
+								<h3>정보 입력</h3>
+								<p class="info-message">* 표시 항목은 필수 입력</p>
+								<ul class="label-box">
+										<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">편성 No.</div>
+											<div class="label-box-item-desc">
+												<p>123456789</p>
+							 				</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">등록/수정일시</div>
+											<div class="label-box-item-desc">
+												<p class="item-group">
+													<span class="item-group-label">최초 등록</span>
+													<span class="item-group-desc">YY-MM-DD hh:mm:ss</span>
+												</p>
+												<p class="item-group">
+													<span class="item-group-label">최근 수정</span>
+													<span class="item-group-desc">YY-MM-DD hh:mm:ss</span>
+												</p>
+							 				</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">동영상 No. *</div>
+											<div class="label-box-item-desc">
+												<p class="info-message">현재 랭킹이 높은 경우 자동으로 제외 처리됩니다. 헛수고겠죠.</p>
+												<p class="item-group">
+													<input type="text" placeholder="" />
+													<button type="button" class="btn-get">현재 랭킹 조회</button>
+												</p>
+												<p class="item-panel font-ml">
+													<span>10</span>
+													<span>위</span>
+												</p>
+							 				</div>
+										</div>
+									</li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">편성 자동 종료일시 *</div>
+											<div class="label-box-item-desc">
+												<p class="info-message">입력한 시간에 자동으로 제외 처리 됩니다.</p>
+												<div class="datepicker">
+													<input type="text" class="datetimepicker-input w-mm" placeholder="yyyy.mm.dd hh:mm" />
+												</div>
+							 				</div>
+										</div>
+									</li>
+									</li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">편성 순위 *</div>
+											<div class="label-box-item-desc">
+												<p class="info-message">1순위로 입력시 곧바로 노출됩니다잉.</p>
+												<p class="item-group">
+													<input type="text" class="w-sm" value="2" />
+													<span>순위로 목록에 추가</span>
+												</p>
+							 				</div>
+										</div>
+									</li>
+								</ul>
+								<ul class="submit">
+									<li><button type="button" class="btn-submit w-ms h-ml">Save</button></li>
+									<li><button type="button" class="btn-cancel w-ms h-ml">Cancel</button></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--layer-detail-sample-edit-content end-->
+		</div>
+	</body>
+</html>

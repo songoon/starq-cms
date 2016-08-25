@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<title>Popup - STAR㉪ CMS</title>
+		<script type="text/javascript" src="resources/js/write-resources.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+	<div id="header">
+				<div class="gnb">
+					$gnb
+				</div>
+			</div>
+			<div id="container">
+				<!--sidebar start-->
+				<div id="sidebar" class="sidebar-scroll">
+					<div class="sidebar-close">
+						<a id="sidebar-close-a">
+							<span class="sidebar-close-icon"></span>
+						</a>
+					</div>
+					<div class="lnb">
+						$lnb
+	                </div>
+	                <div class="sidebar-footer">
+                		$sidebar footer
+                	</div>
+				</div>
+				<!--sidebar end-->
+				<!--contents start-->
+				<div id="contents">
+					<div class="con-wrap">
+						<div class="con-header">
+							<h1>
+								<span class="depth-item">
+									<span>Support</span>
+									<span>Popup</span>
+								</span>
+							</h1>
+							<h4>팝업 알림을 관리합니다.</h4>
+						</div>
+						<div class="con-body">
+							<div class="con-sector">
+								<h3>팝업 알림 목록</h3>
+								<ul class="list-option-action">
+									<li>
+										<button type="button" class="btn-new">
+											<span class="icon fa fa-plus"></span>
+					            			<span>팝업 알림 추가</span>
+										</button>
+									</li>
+									<li>
+										<button type="button" class="btn-cancel">
+											<span class="icon fa fa-times"></span>
+					            			<span>삭제</span>
+										</button>
+									</li>
+								</ul>
+								<table class="table">
+									<thead>
+										<tr>
+											<th class="w-ss"><input type="checkbox" /></th>
+											<th class="w-sl">팝업 No.</th>
+											<th>제목 / 내용</th>
+											<th class="w-sl sub-info">OS</th>
+											<th class="w-sm sub-info">속성</th>
+											<th class="w-sm sub-info">강제</th>
+											<th class="w-sm sub-info">상태</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="status-active">
+											<td><input type="checkbox" /></td>
+											<td>123456789</td>
+											<td>
+												<a href="#">알립니다잉</a>
+												<p class="td-desc sub-info">
+													<span>8월 2일부로 이효정씨는 이제 34.0 버전으로 업그레이드 되었습니다. 업그레이드는 계속됩니다.</span>
+												</p>
+											</td>
+											<td class="sub-info">Android</td>
+											<td class="sub-info">일반</td>
+											<td class="sub-info">YES</td>
+											<td class="sub-info">활성</td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="pagenation">
+									<ul>
+										<li>
+											<select>
+												<option>10s</option>
+												<option selected>20s</option>
+												<option>50s</option>
+												<option>100s</option>
+											</select>
+										</li>
+										<li><button type="button" class="btn-common"><</button></li>
+										<li><button type="button" class="btn-common">1</button></li>
+										<li><button type="button" class="btn-common">2</button></li>
+										<li><button type="button" class="btn-common">3</button></li>
+										<li><button type="button" class="btn-common">4</button></li>
+										<li><button type="button" class="btn-common">5</button></li>
+										<li><button type="button" class="btn-common">></button></li>
+									</ul>
+								</div>
+							</div>
+							<div class="con-sector">
+								<h3>layer</h3>
+								<p class="font-ml">
+									<a id="layer-detail-sample-edit-popup-open">팝업 알림 등록/수정 샘플 layer 열기</a>
+									<script type="text/javascript">
+										$(function(){
+											$("#layer-detail-sample-edit-popup-open").click(function(){
+												$("#layer-detail-sample-edit-popup").show();
+												$("#layer-detail-sample-edit-popup").animate({right:'0'});
+										    });
+										});
+									</script>
+								<p>
+							</div>
+						</div>
+					</div>
+				</div> <!--contents end-->
+			</div>
+			<div id="footer">
+				$footer
+			</div>
+			
+			<!--layer-detail-sample-edit-popup start-->
+			<div id="layer-detail-sample-edit-popup" class="layer-detail">
+				<div class="layer-wrap">
+					<div class="layer-box w-xls">
+						<div class="layer-close">
+							<a id="layer-detail-sample-edit-popup-close"><span class="layer-close-icon"></span></a>
+							<script type="text/javascript">
+								$(function(){
+									$("#layer-detail-sample-edit-popup-close").click(function(){
+										$("#layer-detail-sample-edit-popup").animate({right:'-100%'});
+										$("#layer-detail-sample-edit-popup").fadeOut("fast");
+								    });
+								});
+							</script>
+						</div>
+						<div class="layer-header">
+							<h2>팝업 알림 등록/수정</h2> 
+						</div> 
+						<div class="layer-body">
+							<div class="con-sector">
+								<h3>정보 입력</h3>
+								<p class="info-message">* 표시 항목은 필수 입력</p>
+								<ul class="label-box">
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">팝업 No.</div>
+											<div class="label-box-item-desc">
+												<p>123456789</p>
+							 				</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">등록/수정일시</div>
+											<div class="label-box-item-desc">
+												<p class="item-group">
+													<span class="item-group-label">최초 등록</span>
+													<span class="item-group-desc">YY-MM-DD hh:mm:ss</span>
+												</p>
+												<p class="item-group">
+													<span class="item-group-label">최근 수정</span>
+													<span class="item-group-desc">YY-MM-DD hh:mm:ss</span>
+												</p>
+							 				</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">OS 선택 *</div>
+											<div class="label-box-item-desc">
+												<p>
+													<input type="radio" checked="checked" /><label>All</label>
+													<input type="radio" /><label>Android</label>
+													<input type="radio" /><label>iOS</label>
+												</p>
+							 				</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">알림 속성 *</div>
+											<div class="label-box-item-desc">
+												<p>
+													<select>
+														<option>일반</option>
+														<option>버전</option>
+													</select>
+												</p>
+												<p>
+													<input type="text" placeholder="버전 정보" />
+												</p>
+							 				</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">강제 노출 *</div>
+											<div class="label-box-item-desc">
+												<p>
+													<input type="radio" /><label>YES</label>
+													<input type="radio" checked="checked" /><label>NO</label>
+												</p>
+							 				</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">제목 *</div>
+											<div class="label-box-item-desc">
+												<p>
+													<input type="text" class="w-ls"/>
+												</p>
+							 				</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">내용 *</div>
+											<div class="label-box-item-desc">
+												<p>
+													<textarea rows="2" cols class="w-100per" placeholder="" ></textarea>
+												</p>
+							 				</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">상태 *</div>
+											<div class="label-box-item-desc">
+												<p>
+													<input type="radio" /><label>활성</label>
+													<input type="radio" checked="checked" /><label>중단</label>
+												</p>
+							 				</div>
+										</div>
+									</li>
+								</ul>
+								<ul class="submit">
+									<li><button type="button" class="btn-submit w-ms h-ml">Save</button></li>
+									<li><button type="button" class="btn-cancel w-ms h-ml">Cancel</button></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--layer-detail-sample-edit-popup end-->
+		</div>
+	</body>
+</html>

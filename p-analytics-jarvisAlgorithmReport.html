@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<title>Jarvis Algorithm Report - STAR㉪ CMS</title>
+		<script type="text/javascript" src="resources/js/write-resources.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="header">
+				<div class="gnb">
+					$gnb
+				</div>
+			</div>
+			<div id="container">
+				<!--sidebar start-->
+				<div id="sidebar" class="sidebar-scroll">
+					<div class="sidebar-close">
+						<a id="sidebar-close-a">
+							<span class="sidebar-close-icon"></span>
+						</a>
+					</div>
+					<div class="lnb">
+						$lnb
+	                </div>
+	                <div class="sidebar-footer">
+                		$sidebar footer
+                	</div>
+				</div>
+				<!--sidebar end-->
+				<!--contents start-->
+				<div id="contents">
+					<div class="con-wrap">
+						<div class="con-header">
+							<h1>
+								<span class="depth-item">
+									<span>Analytics</span>
+									<span>Jarvis Algorithm Report</span>
+								</span>
+							</h1>
+							<h4>자비스 알고리즘의 유효성을 조회합니다.</h4>
+						</div>
+						<div class="con-body">
+							<div class="con-sector">
+					    		<h3>평가 횟수</h3>
+					    		<ul class="list-option-filter">
+									<li>
+										<div class="datepicker">
+											<input type="text" class="datepicker-input w-sl" placeholder="yyyy.mm.dd" />
+											<span>~</span>
+											<input type="text" class="datepicker-input w-sl" placeholder="yyyy.mm.dd" />
+										</div>
+									</li>
+									<li>
+										<button type="button" class="btn-submit">조건 적용</button>
+									</li>
+								</ul>
+					    		<div class="tabs">
+							        <ul class="tabs-menu">
+							            <li><a rel="#tabs-content-1">점수별</a></li>
+										<li><a rel="#tabs-content-2">적중 구간별</a></li>
+							        </ul>
+							        <div class="tabs-content" id="tabs-content-1">
+							        	<p class="info-message">자비스 추천 동영상에 대한 점수대별 평가 횟수</p>
+							    		<div class="chart-embed-wrap">
+											<div class="chart-embed-ratio">
+												<div class="chart-embed-code">$chart embed</div>
+											</div>
+										</div>
+							        	<table class="table table-report">
+											<thead>
+												<tr>
+													<th class="t-label">구분</th>
+													<th class="w-sm">1점</th>
+													<th class="w-sm">2점</th>
+													<th class="w-sm">3점</th>
+													<th class="w-sm">4점</th>
+													<th class="w-sm">5점</th>
+													<th class="w-sm">6점</th>
+													<th class="w-sm">7점</th>
+													<th class="w-sm">8점</th>
+													<th class="w-sm">9점</th>
+													<th class="w-sm">10점</th>
+													<th class="w-sl">합계</th>
+												</tr>
+											</thead>
+											<tfoot>
+												<tr>
+													<td class="t-label">avg</a></td>
+													<td>123,456</td>
+													<td>123,456</td>
+													<td>123,456</td>
+													<td>123,456</td>
+													<td>123,456</td>
+													<td>123,456</td>
+													<td>123,456</td>
+													<td>123,456</td>
+													<td>123,456</td>
+													<td>123,456</td>
+													<td>123,456</td>
+												</tr>
+												<tr>
+													<td class="t-label">total</a></td>
+													<td>123,456</td>
+													<td>123,456</td>
+													<td>123,456</td>
+													<td>123,456</td>
+													<td>123,456</td>
+													<td>123,456</td>
+													<td>123,456</td>
+													<td>123,456</td>
+													<td>123,456</td>
+													<td>123,456</td>
+													<td>123,456</td>
+												</tr>
+											</tfoot>									
+											<tbody>
+												<tr>
+													<td class="t-label"><a href="#">YYYY-MM-DD</a></td>
+													<td>123,456</td>
+													<td>123,456</td>
+													<td>123,456</td>
+													<td>123,456</td>
+													<td>123,456</td>
+													<td>123,456</td>
+													<td>123,456</td>
+													<td>123,456</td>
+													<td>123,456</td>
+													<td>123,456</td>
+													<td>123,456</td>
+												</tr>
+											</tbody>
+										</table>
+							        </div>
+							        <div class="tabs-content" id="tabs-content-2">
+							        	<p class="info-message">X=(실제평가점수)-(예상점수) / X값의 구간별 평가 횟수</p>
+										<div class="chart-embed-wrap">
+											<div class="chart-embed-ratio">
+												<div class="chart-embed-code">$chart embed</div>
+											</div>
+										</div>
+							        	<table class="table table-report">
+											<thead>
+												<tr>
+													<th class="t-label">구분</th>
+													<th class="w-sl">적중<br>(-2 < X < 2)</th>
+													<th class="w-sl">낮음<br>(X =< -2)</th>
+													<th class="w-sl">높음<br>(X >= 2)</th>
+													<th class="w-sl">합계</th>
+												</tr>
+											</thead>
+											<tfoot>
+												<tr>
+													<td class="t-label">avg</a></td>
+													<td>123,456</td>
+													<td>123,456</td>
+													<td>123,456</td>
+													<td>123,456</td>
+												</tr>
+												<tr>
+													<td class="t-label">total</a></td>
+													<td>123,456</td>
+													<td>123,456</td>
+													<td>123,456</td>
+													<td>123,456</td>
+												</tr>
+											</tfoot>									
+											<tbody>
+												<tr>
+													<td class="t-label"><a href="#">YYYY-MM-DD</a></td>
+													<td>123,456</td>
+													<td>123,456</td>
+													<td>123,456</td>
+													<td>123,456</td>
+												</tr>
+											</tbody>
+										</table>
+							        </div>
+						        </div>
+						        <script>
+									$(function(){
+										$(".tabs-menu li:first a").addClass("selected");
+										$(".tabs-content:not(:first)").hide();
+										
+										$(".tabs-menu li a").click(function(){
+											$(".tabs-menu li a").removeClass("selected");
+											$(this).addClass("selected");
+											$(".tabs-content").hide()
+											var selectedTabBody = $(this).attr("rel");
+											$(selectedTabBody).show();
+										});
+									});
+								</script>
+					        </div>
+						</div>
+					</div>
+				</div> <!--contents end-->
+			</div>
+			<div id="footer">
+				$footer
+			</div>
+		</div>
+	</body>
+</html>

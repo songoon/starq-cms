@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<title>Push - STAR㉪ CMS</title>
+		<script type="text/javascript" src="resources/js/write-resources.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="header">
+				<div class="gnb">
+					$gnb
+				</div>
+			</div>
+			<div id="container">
+				<!--sidebar start-->
+				<div id="sidebar" class="sidebar-scroll">
+					<div class="sidebar-close">
+						<a id="sidebar-close-a">
+							<span class="sidebar-close-icon"></span>
+						</a>
+					</div>
+					<div class="lnb">
+						$lnb
+	                </div>
+	                <div class="sidebar-footer">
+                		$sidebar footer
+                	</div>
+				</div>
+				<!--sidebar end-->
+				<!--contents start-->
+				<div id="contents">
+					<div class="con-wrap">
+						<div class="con-header">
+							<h1>
+								<span class="depth-item">
+									<span>Support</span>
+									<span>Push</span>
+								</span>
+							</h1>
+							<h4>푸시 알림을 관리합니다.</h4>
+						</div>
+						<div class="con-body">
+							<div class="con-sector">
+								<h3>푸시 알림 목록</h3>
+								<ul class="list-option-action">
+									<li>
+										<button type="button" class="btn-new">
+											<span class="icon fa fa-plus"></span>
+					            			<span>푸시 알림 추가</span>
+										</button>
+									</li>
+									<li>
+										<button type="button" class="btn-cancel">
+											<span class="icon fa fa-times"></span>
+					            			<span>삭제</span>
+										</button>
+									</li>
+								</ul>
+								<table class="table">
+									<thead>
+										<tr>
+											<th class="w-ss"><input type="checkbox" /></th>
+											<th class="w-sl">푸시 No.</th>
+											<th>제목 / 내용</th>
+											<th class="w-sl sub-info">OS</th>
+											<th class="w-mm sub-info">발송일시</th>
+											<th class="w-sm sub-info">상태</th>
+											<th class="w-mm sub-info">
+												<span class="divide-item">
+													<span>성공</span>
+													<span>실패</span>
+													<span>전체</span>
+												</span>
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="status-active">
+											<td><input type="checkbox" /></td>
+											<td>123456789</td>
+											<td>
+												<a href="#">주목하세요</a>
+												<p class="td-desc sub-info">
+													<span>수원에 사는 30대 중반 여성 이효X씨가 생일을 맞았다고 합니다.</span>
+												</p>
+											</td>
+											<td class="sub-info">Android</td>
+											<td class="sub-info">YY-MM-DD hh:mm:ss</td>
+											<td class="sub-info">완료</td>
+											<td class="sub-info">
+												<span class="divide-item">
+													<span>12,345</span>
+													<span>123</span>
+													<span>12,468</span>
+												</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="pagenation">
+									<ul>
+										<li>
+											<select>
+												<option>10s</option>
+												<option selected>20s</option>
+												<option>50s</option>
+												<option>100s</option>
+											</select>
+										</li>
+										<li><button type="button" class="btn-common"><</button></li>
+										<li><button type="button" class="btn-common">1</button></li>
+										<li><button type="button" class="btn-common">2</button></li>
+										<li><button type="button" class="btn-common">3</button></li>
+										<li><button type="button" class="btn-common">4</button></li>
+										<li><button type="button" class="btn-common">5</button></li>
+										<li><button type="button" class="btn-common">></button></li>
+									</ul>
+								</div>
+							</div>
+							<div class="con-sector">
+								<h3>layer</h3>
+								<p class="font-ml">
+									<a id="layer-detail-sample-edit-push-open">푸시알림 등록/수정 샘플 layer 열기</a>
+									<script type="text/javascript">
+										$(function(){
+											$("#layer-detail-sample-edit-push-open").click(function(){
+												$("#layer-detail-sample-edit-push").show();
+												$("#layer-detail-sample-edit-push").animate({right:'0'});
+										    });
+										});
+									</script>
+								<p>
+							</div>
+						</div>
+					</div>
+				</div> <!--contents end-->
+			</div>
+			<div id="footer">
+				$footer
+			</div>
+			
+			<!--layer-detail-sample-edit-push start-->
+			<div id="layer-detail-sample-edit-push" class="layer-detail">
+				<div class="layer-wrap">
+					<div class="layer-box w-xls">
+						<div class="layer-close">
+							<a id="layer-detail-sample-edit-push-close"><span class="layer-close-icon"></span></a>
+							<script type="text/javascript">
+								$(function(){
+									$("#layer-detail-sample-edit-push-close").click(function(){
+										$("#layer-detail-sample-edit-push").animate({right:'-100%'});
+										$("#layer-detail-sample-edit-push").fadeOut("fast");
+								    });
+								});
+							</script>
+						</div>
+						<div class="layer-header">
+							<h2>푸시 알림 등록/수정</h2> 
+						</div> 
+						<div class="layer-body">
+							<div class="con-sector">
+								<h3>정보 입력</h3>
+								<p class="info-message">* 표시 항목은 필수 입력</p>
+								<ul class="label-box">
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">푸시 No.</div>
+											<div class="label-box-item-desc">
+												<p>123456789</p>
+							 				</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">등록/수정일시</div>
+											<div class="label-box-item-desc">
+												<p class="item-group">
+													<span class="item-group-label">최초 등록</span>
+													<span class="item-group-desc">YY-MM-DD hh:mm:ss</span>
+												</p>
+												<p class="item-group">
+													<span class="item-group-label">최근 수정</span>
+													<span class="item-group-desc">YY-MM-DD hh:mm:ss</span>
+												</p>
+							 				</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">OS 선택 *</div>
+											<div class="label-box-item-desc">
+												<p>
+													<input type="radio" checked="checked" /><label>All</label>
+													<input type="radio" /><label>Android</label>
+													<input type="radio" /><label>iOS</label>
+												</p>
+							 				</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">발송 대상 회원 *</div>
+											<div class="label-box-item-desc">
+												<p>
+													<select>
+														<option>All</option>
+														<option>회원 전체</option>
+														<option>비회원 전체</option>
+														<option>특정 회원 ID</option>
+													</select>
+												</p>
+												<p>
+													<input type="text" class="w-ls" placeholder="특정 회원 ID, 쉼표로 구분" />
+												</p>
+							 				</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">알림 속성 *</div>
+											<div class="label-box-item-desc">
+												<p class="info-message">푸시 실행 시, 보여줄 APP 화면 정보를 설정합니다.</p>
+												<p>
+													<select>
+														<option>일반 텍스트</option>
+														<option>동영상</option>
+														<option>메뉴</option>
+														<option>공지사항</option>
+													</select>
+												</p>
+												<p>
+													<input type="text" placeholder="동영상 ID" />
+												</p>
+												<p>
+													<select>
+														<option>메뉴 선택</option>
+														<option>랭킹</option>
+														<option>자비스 추천</option>
+													</select>
+												</p>
+												<p>
+													<input type="text" placeholder="공지 게시물 ID" />
+												</p>
+							 				</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">제목 *</div>
+											<div class="label-box-item-desc">
+												<p>
+													<input type="text" class="w-ls"/>
+												</p>
+							 				</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">내용 *</div>
+											<div class="label-box-item-desc">
+												<p>
+													<textarea rows="2" cols class="w-100per" placeholder="" ></textarea>
+												</p>
+							 				</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">빅푸시 텍스트</div>
+											<div class="label-box-item-desc">
+												<p class="info-message">android 전용</p>
+												<p>
+													<textarea rows="3" cols class="w-100per" placeholder="" ></textarea>
+												</p>
+							 				</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">빅푸시 이미지</div>
+											<div class="label-box-item-desc">
+												<p class="info-message">android 전용</p>
+												<p>
+													<input type="file" class="file-input" />
+												</p>
+							 				</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">발송 일정 *</div>
+											<div class="label-box-item-desc">
+												<p>
+													<input type="radio" checked="checked" /><label>즉시 발송</label>
+													<input type="radio"/><label>예약 발송</label>
+												</p>
+												<div class="datepicker">
+													<input type="text" class="datetimepicker-input w-mm" placeholder="yyyy.mm.dd hh:mm" />
+												</div>
+							 				</div>
+										</div>
+									</li>
+								</ul>
+								<ul class="submit">
+									<li><button type="button" class="btn-submit w-ms h-ml">Save</button></li>
+									<li><button type="button" class="btn-cancel w-ms h-ml">Cancel</button></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--layer-detail-sample-edit-push end-->
+		</div>
+	</body>
+</html>

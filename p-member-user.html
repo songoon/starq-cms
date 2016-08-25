@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<title>User - STAR㉪ CMS</title>
+		<script type="text/javascript" src="resources/js/write-resources.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="header">
+				<div class="gnb">
+					$gnb
+				</div>
+			</div>
+			<div id="container">
+				<!--sidebar start-->
+				<div id="sidebar" class="sidebar-scroll">
+					<div class="sidebar-close">
+						<a id="sidebar-close-a">
+							<span class="sidebar-close-icon"></span>
+						</a>
+					</div>
+					<div class="lnb">
+						$lnb
+	                </div>
+	                <div class="sidebar-footer">
+                		$sidebar footer
+                	</div>
+				</div>
+				<!--sidebar end-->
+				<!--contents start-->
+				<div id="contents">
+					<div class="con-wrap">
+						<div class="con-header">
+							<h1>
+								<span class="depth-item">
+									<span>Member</span>
+									<span>User</span>
+								</span>
+							</h1>
+							<h4>서비스 회원 정보를 열람할 수 있습니다.</h4>
+						</div>
+						<div class="con-body">
+							<div class="con-sector">
+								<h3>회원 목록</h3>
+								<ul class="list-option-filter">
+									<li>
+										<select>
+											<option>가입 유형</option>
+											<option>직접 가입</option>
+											<option>페이스북</option>
+											<option>구글플러스</option>
+										</select>
+									</li>
+									<li>
+										<select>
+											<option>상태</option>
+											<option>정상</option>
+											<option>휴면</option>
+											<option>탈퇴</option>
+										</select>
+									</li>
+									<li>
+										<div class="datepicker">
+											<input type="text" class="datepicker-input w-sl" placeholder="yyyy.mm.dd" />
+											<span>~</span>
+											<input type="text" class="datepicker-input w-sl" placeholder="yyyy.mm.dd" />
+										</div>
+									</li>
+									<li>
+										<table class="search-bar">
+											<tbody>
+												<tr>
+													<td class="search-bar-option">
+														<select>
+															<option>이메일</option>
+														</select>
+													</td>
+													<td class="search-bar-input">
+														<input type="search" placeholder="keyword"/>
+													</td>
+													<td class="search-bar-btn">
+														<button type="button"><span class="icon fa fa-search"></span></button>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</li>
+									<li>
+										<button type="button" class="btn-submit">필터 적용</button>
+									</li>
+								</ul>
+								<table class="table">
+									<thead>
+										<tr>
+											<th class="w-sl">회원 No.</th>
+											<th class="w-sm">이미지</th>
+											<th>이메일</th>
+											<th class="w-ms sub-info">가입 유형</th>
+											<th class="w-sm sub-info">상태</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>123456789</td>
+											<td class="profile-image">
+												<div class="img-embed-wrap">
+													<img src="resources/images/default-image-user.png" />
+												</div>
+											</td>
+											<td><a href="#">songoon@scenappsm.com</a></td>
+											<td class="sub-info">직접 가입</td>
+											<td class="sub-info">정상</td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="pagenation">
+									<ul>
+										<li>
+											<select>
+												<option>10s</option>
+												<option selected>20s</option>
+												<option>50s</option>
+												<option>100s</option>
+											</select>
+										</li>
+										<li><button type="button" class="btn-common"><</button></li>
+										<li><button type="button" class="btn-common">1</button></li>
+										<li><button type="button" class="btn-common">2</button></li>
+										<li><button type="button" class="btn-common">3</button></li>
+										<li><button type="button" class="btn-common">4</button></li>
+										<li><button type="button" class="btn-common">5</button></li>
+										<li><button type="button" class="btn-common">></button></li>
+									</ul>
+								</div>
+							</div>
+							<div class="con-sector">
+								<h3>layer</h3>
+								<p class="font-ml">
+									<a id="layer-detail-sample-edit-user-open">회원 정보/수정 샘플 layer 열기</a>
+									<script type="text/javascript">
+										$(function(){
+											$("#layer-detail-sample-edit-user-open").click(function(){
+												$("#layer-detail-sample-edit-user").show();
+												$("#layer-detail-sample-edit-user").animate({right:'0'});
+										    });
+										});
+									</script>
+								<p>
+							</div>
+						</div>
+					</div>
+				</div> <!--contents end-->
+			</div>
+			<div id="footer">
+				$footer
+			</div>
+			
+			<!--layer-detail-sample-edit-user start-->
+			<div id="layer-detail-sample-edit-user" class="layer-detail">
+				<div class="layer-wrap">
+					<div class="layer-box w-xls">
+						<div class="layer-close">
+							<a id="layer-detail-sample-edit-user-close"><span class="layer-close-icon"></span></a>
+							<script type="text/javascript">
+								$(function(){
+									$("#layer-detail-sample-edit-user-close").click(function(){
+										$("#layer-detail-sample-edit-user").animate({right:'-100%'});
+										$("#layer-detail-sample-edit-user").fadeOut("fast");
+								    });
+								});
+							</script>
+						</div>
+						<div class="layer-header">
+							<h2>회원 정보</h2> 
+						</div> 
+						<div class="layer-body">
+							<div class="con-sector">
+								<h3>정보 조회</h3>
+								<ul class="label-box">
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">회원 No.</div>
+											<div class="label-box-item-desc">
+												<p>123456789</p>
+							 				</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">가입/접속일시</div>
+											<div class="label-box-item-desc">
+												<p class="item-group">
+													<span class="item-group-label">최초 가입</span>
+													<span class="item-group-desc">YY-MM-DD hh:mm:ss</span>
+												</p>
+												<p class="item-group">
+													<span class="item-group-label">최근 접속</span>
+													<span class="item-group-desc">YY-MM-DD hh:mm:ss</span>
+												</p>
+							 				</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">이메일</div>
+											<div class="label-box-item-desc">
+												<p>songoon@naver.com</p>
+							 				</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">가입 구분</div>
+											<div class="label-box-item-desc">
+												<p>
+													<input type="radio" checked /><label>직접가입</label>
+													<input type="radio" disabled /><label>페이스북</label>
+													<input type="radio" disabled /><label>구글플러스</label>
+												</p>
+							 				</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">상태</div>
+											<div class="label-box-item-desc">
+												<p>
+													<input type="radio" checked /><label>정상</label>
+													<input type="radio" disabled /><label>휴면</label>
+													<input type="radio" disabled /><label>탈퇴</label>
+												</p>
+							 				</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">이용 내역</div>
+											<div class="label-box-item-desc">
+												<p class="item-group">
+													<span class="item-group-label">시청 동영상 개수</span>
+													<span class="item-group-desc">12,345</span>
+												</p>
+												<p class="item-group">
+													<span class="item-group-label">평가 동영상 개수</span>
+													<span class="item-group-desc">12,345</span>
+												</p>
+												<p class="item-group">
+													<span class="item-group-label">총 시청 시간</span>
+													<span class="item-group-desc">
+														<span>123</span><span>시간</span>
+														<span>45</span><span>분</span>
+														<span>6</span><span>초</span>
+													</span>
+												</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--layer-detail-sample-edit-user end-->
+		</div> 
+	</body>
+</html>

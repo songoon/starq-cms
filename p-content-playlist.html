@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<title>Playlist - STAR㉪ CMS</title>
+		<script type="text/javascript" src="resources/js/write-resources.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+		<div id="header">
+				<div class="gnb">
+					$gnb
+				</div>
+			</div>
+			<div id="container">
+				<!--sidebar start-->
+				<div id="sidebar" class="sidebar-scroll">
+					<div class="sidebar-close">
+						<a id="sidebar-close-a">
+							<span class="sidebar-close-icon"></span>
+						</a>
+					</div>
+					<div class="lnb">
+						$lnb
+	                </div>
+	                <div class="sidebar-footer">
+                		$sidebar footer
+                	</div>
+				</div>
+				<!--sidebar end-->
+				<!--contents start-->
+				<div id="contents">
+					<div class="con-wrap">
+						<div class="con-header">
+							<h1>
+								<span class="depth-item">
+									<span>Content</span>
+									<span>Playlist</span>
+								</span>
+							</h1>
+							<h4>동영상 프로그램, 시리즈, 재생목록을 관리합니다.</h4>
+						</div>
+						<div class="con-body">
+							<div class="con-sector">
+								<h3>재생목록 목록</h3>
+								<div class="list-option">
+									<ul class="list-option-filter">
+										<li>
+											<select>
+												<option>채널 담당자</option>
+												<option>미지정</option>
+												<option>조돈석</option>
+												<option>강태미</option>
+											</select>
+										</li>
+										<li>
+											<select>
+												<option>상태</option>
+												<option>활성</option>
+												<option>대기</option>
+												<option>중단</option>
+											</select>
+										</li>
+										<li>
+											<div class="datepicker">
+												<input type="text" class="datepicker-input w-sl" placeholder="yyyy.mm.dd" />
+												<span>~</span>
+												<input type="text" class="datepicker-input w-sl" placeholder="yyyy.mm.dd" />
+											</div>
+										</li>
+										<li>
+											<table class="search-bar">
+												<tbody>
+													<tr>
+														<td class="search-bar-option">
+															<select>
+																<option>재생목록 제목</option>
+																<option>재생목록 ID</option>
+																<option>채널 이름</option>
+															</select>
+														</td>
+														<td class="search-bar-input">
+															<input type="search" placeholder="keyword"/>
+														</td>
+														<td class="search-bar-btn">
+															<button type="button"><span class="icon fa fa-search"></span></button>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</li>
+										<li>
+											<button type="button" class="btn-submit">필터 적용</button>
+										</li>
+									</ul>
+									<ul class="list-option-action">
+										<li>
+											<button type="button" class="btn-new">
+												<span class="icon fa fa-plus"></span>
+						            			<span>재생목록 추가</span>
+											</button>
+										</li>
+										<li>
+											<button type="button" class="btn-cancel">
+												<span class="icon fa fa-times"></span>
+						            			<span>삭제</span>
+											</button>
+										</li>
+									</ul>
+								</div>
+								<table class="table">
+									<thead>
+										<tr>
+											<th class="w-ss"><input type="checkbox" /></th>
+											<th class="w-sl">재생목록 No.</th>
+											<th>재생목록 ID</th>
+											<th class="w-mm sub-info">제목</th>
+											<th class="w-ms sub-info">채널</th>
+											<th class="w-ms sub-info">동영상 수</th>
+											<th class="w-sm sub-info">상태</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="status-active">
+											<td><input type="checkbox" /></td>
+											<td>123456789</td>
+											<td><a href="#">InfiniteChallenge</a></td>
+											<td>무한도전</td>
+											<td class="sub-info">MBC</td>
+											<td class="sub-info">1,234</td>
+											<td class="sub-info">활성</td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="pagenation">
+									<ul>
+										<li>
+											<select>
+												<option>10s</option>
+												<option selected>20s</option>
+												<option>50s</option>
+												<option>100s</option>
+											</select>
+										</li>
+										<li><button type="button" class="btn-common"><</button></li>
+										<li><button type="button" class="btn-common">1</button></li>
+										<li><button type="button" class="btn-common">2</button></li>
+										<li><button type="button" class="btn-common">3</button></li>
+										<li><button type="button" class="btn-common">4</button></li>
+										<li><button type="button" class="btn-common">5</button></li>
+										<li><button type="button" class="btn-common">></button></li>
+									</ul>
+								</div>
+							</div>
+							<div class="con-sector">
+								<h3>layer</h3>
+								<p class="font-ml">
+									<a id="layer-detail-sample-edit-playlist-open">재생목록 등록/수정 샘플 layer 열기</a>
+									<script type="text/javascript">
+										$(function(){
+											$("#layer-detail-sample-edit-playlist-open").click(function(){
+												$("#layer-detail-sample-edit-playlist").show();
+												$("#layer-detail-sample-edit-playlist").animate({right:'0'});
+										    });
+										});
+									</script>
+								<p>
+							</div>
+						</div>
+					</div>
+				</div> <!--contents end-->
+			</div> 
+			<div id="footer">
+				$footer
+			</div>
+			
+			<!--layer-detail-sample-edit-playlist start-->
+			<div id="layer-detail-sample-edit-playlist" class="layer-detail">
+				<div class="layer-wrap">
+					<div class="layer-box w-xls">
+						<div class="layer-close">
+							<a id="layer-detail-sample-edit-playlist-close"><span class="layer-close-icon"></span></a>
+							<script type="text/javascript">
+								$(function(){
+									$("#layer-detail-sample-edit-playlist-close").click(function(){
+										$("#layer-detail-sample-edit-playlist").animate({right:'-100%'});
+										$("#layer-detail-sample-edit-playlist").fadeOut("fast");
+								    });
+								});
+							</script>
+						</div>
+						<div class="layer-header">
+							<h2>재생목록 등록/수정</h2> 
+						</div> 
+						<div class="layer-body">
+							<div class="con-sector">
+								<h3>정보 입력</h3>
+								<p class="info-message">* 표시 항목은 필수 입력</p>
+								<ul class="label-box">
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">재생목록 No.</div>
+											<div class="label-box-item-desc">
+												<p>123456789</p>
+							 				</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">등록/수정일시</div>
+											<div class="label-box-item-desc">
+												<p class="item-group">
+													<span class="item-group-label">최초 등록</span>
+													<span class="item-group-desc">YY-MM-DD hh:mm:ss</span>
+												</p>
+												<p class="item-group">
+													<span class="item-group-label">최근 수정</span>
+													<span class="item-group-desc">YY-MM-DD hh:mm:ss</span>
+												</p>
+							 				</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">재생목록 ID *</div>
+											<div class="label-box-item-desc">
+												<p>
+													<input type="text" />
+												</p>
+							 				</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">제목 *</div>
+											<div class="label-box-item-desc">
+												<p>
+													<input type="text" class="w-ls"/>
+												</p>
+							 				</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">채널 정보</div>
+											<div class="label-box-item-desc">
+												<ul class="item-group">
+													<li>
+														<div class="autocomplete">
+															<input type="text" class="autocomplete-input" placeholder="채널 이름" />
+															<ul class="autocomplete-result">
+																<li>tag</li>
+															</ul>
+														</div>
+													</li>
+												</ul>
+							 				</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">Tag - 업로더</div>
+											<div class="label-box-item-desc">
+												<p class="info-message">크리에이터, 제작자, 업로더</p>
+												<ul class="item-group">
+													<li>
+														<select>
+															<option selected>3</option>
+															<option>2</option>
+															<option>1</option>
+														</select>
+														<span>의 가중치로</span>
+													</li>
+													<li>
+														<div class="autocomplete">
+															<input type="text" class="autocomplete-input" placeholder="태그" />
+															<ul class="autocomplete-result">
+																<li>tag</li>
+															</ul>
+														</div>
+													</li>
+													<li>
+														<button type="button" class="btn-new">추가</button>
+													</li>
+												</ul>
+												<p class="tag-cloud tag-for-remove">
+													<a><span class="tag">JYP</span><span class="tag-point">3</span></a>
+												</p>
+							 				</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">Tag - 인물</div>
+											<div class="label-box-item-desc">
+												<p class="info-message">중심인물=3점, 중심인물속성=2점, 보조인물=1점</p>
+												<ul class="item-group">
+													<li>
+														<select>
+															<option selected>3</option>
+															<option>2</option>
+															<option>1</option>
+														</select>
+														<span>의 가중치로</span>
+													</li>
+													<li>
+														<div class="autocomplete">
+															<input type="text" class="autocomplete-input" placeholder="태그" />
+															<ul class="autocomplete-result">
+																<li>tag</li>
+															</ul>
+														</div>
+													</li>
+													<li>
+														<button type="button" class="btn-new">추가</button>
+													</li>
+												</ul>
+												<p class="tag-cloud tag-for-remove">
+													<a><span class="tag">트와이스</span><span class="tag-point">3</span></a>
+													<a><span class="tag">걸그룹</span><span class="tag-point">2</span></a>
+												</p>
+							 				</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">Tag - 소재</div>
+											<div class="label-box-item-desc">
+												<p class="info-message">핵심소재=3점, 중심소재=2점, 보조소재=1점</p>
+												<ul class="item-group">
+													<li>
+														<select>
+															<option>3</option>
+															<option selected>2</option>
+															<option>1</option>
+														</select>
+														<span>의 가중치로</span>
+													</li>
+													<li>
+														<div class="autocomplete">
+															<input type="text" class="autocomplete-input" placeholder="태그" />
+															<ul class="autocomplete-result">
+																<li>tag</li>
+															</ul>
+														</div>
+													</li>
+													<li>
+														<button type="button" class="btn-new">추가</button>
+													</li>
+												</ul>
+												<p class="tag-cloud tag-for-remove">
+													<a><span class="tag">cheerup</span><span class="tag-point">2</span></a>
+												</p>
+							 				</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">Tag - 장르</div>
+											<div class="label-box-item-desc">
+												<p class="info-message">가중치 1점 통일 권장</p>
+												<ul class="item-group">
+													<li>
+														<select>
+															<option>3</option>
+															<option>2</option>
+															<option selected>1</option>
+														</select>
+														<span>의 가중치로</span>
+													</li>
+													<li>
+														<div class="autocomplete">
+															<input type="text" class="autocomplete-input" placeholder="태그" />
+															<ul class="autocomplete-result">
+																<li>tag</li>
+															</ul>
+														</div>
+													</li>
+													<li>
+														<button type="button" class="btn-new">추가</button>
+													</li>
+												</ul>
+												<p class="tag-cloud tag-for-remove">
+													<a><span class="tag">kpop</span><span class="tag-point">1</span></a>
+													<a><span class="tag">음악</span><span class="tag-point">1</span></a>
+													<a><span class="tag">뮤직비디오</span><span class="tag-point">1</span></a>
+												</p>
+							 				</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">Tag - 감성</div>
+											<div class="label-box-item-desc">
+												<p class="info-message">가중치 1점 통일 권장</p>
+												<ul class="item-group">
+													<li>
+														<select>
+															<option>3</option>
+															<option>2</option>
+															<option selected>1</option>
+														</select>
+														<span>의 가중치로</span>
+													</li>
+													<li>
+														<div class="autocomplete">
+															<input type="text" class="autocomplete-input" placeholder="태그" />
+															<ul class="autocomplete-result">
+																<li>tag</li>
+															</ul>
+														</div>
+													</li>
+													<li>
+														<button type="button" class="btn-new">추가</button>
+													</li>
+												</ul>
+												<p class="tag-cloud tag-for-remove">
+													<a><span class="tag">예쁘다</span><span class="tag-point">1</span></a>
+													<a><span class="tag">귀엽다</span><span class="tag-point">1</span></a>
+												</p>
+							 				</div>
+										</div>
+									</li>
+									<li>
+										<div class="label-box-item">
+											<div class="label-box-item-label">상태 *</div>
+											<div class="label-box-item-desc">
+												<p>
+													<input type="radio"/><label>활성</label>
+													<input type="radio" checked="checked" /><label>대기</label>
+													<input type="radio"/><label>중단</label>
+												</p>
+							 				</div>
+										</div>
+									</li>
+								</ul>
+								<ul class="submit">
+									<li><button type="button" class="btn-submit w-ms h-ml">Save</button></li>
+									<li><button type="button" class="btn-cancel w-ms h-ml">Cancel</button></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--layer-detail-sample-edit-playlist end-->
+		</div>
+	</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<title>Video Ranking - STAR㉪ CMS</title>
+		<script type="text/javascript" src="resources/js/write-resources.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="header">
+				<div class="gnb">
+					$gnb
+				</div>
+			</div>
+			<div id="container">
+				<!--sidebar start-->
+				<div id="sidebar" class="sidebar-scroll">
+					<div class="sidebar-close">
+						<a id="sidebar-close-a">
+							<span class="sidebar-close-icon"></span>
+						</a>
+					</div>
+					<div class="lnb">
+						$lnb
+	                </div>
+	                <div class="sidebar-footer">
+                		$sidebar footer
+                	</div>
+				</div>
+				<!--sidebar end-->
+				<!--contents start-->
+				<div id="contents">
+					<div class="con-wrap">
+						<div class="con-header">
+							<h1>
+								<span class="depth-item">
+									<span>Analytics</span>
+									<span>Video Ranking</span>
+								</span>
+							</h1>
+							<h4>기간별 콘텐츠 랭킹을 조회합니다.</h4>
+						</div>
+						<div class="con-body">
+							<div class="con-sector">
+					    		<h3>동영상 랭킹</h3>
+					    		<ul class="list-option-filter">
+									<li>
+										<select>
+											<option>하루</option>
+											<option>한주</option>
+											<option>한달</option>
+										</select>
+									</li>
+									<li>
+										<select>
+											<option>Top 100</option>
+											<option>Top 300</option>
+											<option>Top 500</option>
+										</select>
+									</li>
+									<li>
+										<button type="button" class="btn-submit">조건 적용</button>
+									</li>
+								</ul>
+					    		<div class="tabs">
+							        <ul class="tabs-menu">
+										<li><a rel="#tabs-content-1">재생수 랭킹</a></li>
+										<li><a rel="#tabs-content-2">참여수 랭킹</a></li>
+										<li><a rel="#tabs-content-3">별점 랭킹</a></li>
+										<!--<li><a rel="#tabs-content-4">종합 랭킹</a></li>-->
+							        </ul>
+							        <div class="tabs-content" id="tabs-content-1">
+							        	<table class="table table-report">
+											<thead>
+												<tr>
+													<th class="w-sm t-label">순위</th>
+													<th class="w-sl t-label sub-info">동영상 No.</th>
+													<th class="t-label">제목</th>
+													<th class="w-sl">재생수</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="t-label">001</td>
+													<td class="t-label sub-info">123456789</td>
+													<td class="t-label"><a href="#">IU Harakeke</a></td>
+													<td>1,234</td>
+												</tr>
+											</tbody>
+										</table>
+							        </div>
+							        <div class="tabs-content" id="tabs-content-2">
+							        	<table class="table table-report">
+											<thead>
+												<tr>
+													<th class="w-sm t-label">순위</th>
+													<th class="w-sl t-label sub-info">동영상 No.</th>
+													<th class="t-label">제목</th>
+													<th class="w-sl">참여수</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="t-label">001</td>
+													<td class="t-label sub-info">123456789</td>
+													<td class="t-label"><a href="#">IU Harakeke</a></td>
+													<td>1,234</td>
+												</tr>
+											</tbody>
+										</table>
+							        </div>
+							        <div class="tabs-content" id="tabs-content-3">
+							        	<table class="table table-report">
+											<thead>
+												<tr>
+													<th class="w-sm t-label">순위</th>
+													<th class="w-sl t-label sub-info">동영상 No.</th>
+													<th class="t-label">제목</th>
+													<th class="w-sl">평균 별점</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="t-label">001</td>
+													<td class="t-label sub-info">123456789</td>
+													<td class="t-label"><a href="#">IU Harakeke</a></td>
+													<td>9.77</td>
+												</tr>
+											</tbody>
+										</table>
+							        </div>
+							        <!--<div class="tabs-content" id="tabs-content-4">
+							        	<p class="info-message">동영상 랭킹 메뉴에 나오는 목록과 같습니다.</p>
+							        	<table class="table table-report">
+											<thead>
+												<tr>
+													<th class="w-sm t-label">순위</th>
+													<th class="w-sl t-label sub-info">동영상 No.</th>
+													<th class="t-label">제목</th>
+													<th class="w-sl">총점</th>
+													<th class="w-sl sub-info">신선도</th>
+													<th class="w-sl sub-info">인기도</th>
+													<th class="w-sl sub-info">완성도</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="t-label">001</td>
+													<td class="t-label sub-info">123456789</td>
+													<td class="t-label"><a href="#">IU Harakeke</a></td>
+													<td>999</td>
+													<td class="sub-info">333</td>
+													<td class="sub-info">333</td>
+													<td class="sub-info">333</td>
+												</tr>
+											</tbody>
+										</table>
+							        </div>-->
+						        </div>
+						        <script>
+									$(function(){
+										$(".tabs-menu li:first a").addClass("selected");
+										$(".tabs-content:not(:first)").hide();
+										
+										$(".tabs-menu li a").click(function(){
+											$(".tabs-menu li a").removeClass("selected");
+											$(this).addClass("selected");
+											$(".tabs-content").hide()
+											var selectedTabBody = $(this).attr("rel");
+											$(selectedTabBody).show();
+										});
+									});
+								</script>
+					        </div>
+						</div>
+					</div>
+				</div> <!--contents end-->
+			</div>
+			<div id="footer">
+				$footer
+			</div>
+		</div>
+	</body>
+</html>

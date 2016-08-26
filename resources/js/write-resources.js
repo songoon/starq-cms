@@ -13,6 +13,7 @@ document.write("<script type='text/javascript' src='resources/plugin/jquery/jque
 document.write("<link rel='stylesheet' type='text/css' href='resources/plugin/font-awesome/4.6.3/css/font-awesome.min.css' />");
 
 // css skin 
+document.write("<link rel='shortcut icon' href='resources/images/emoticon-favicon.png' />");
 document.write("<link rel='stylesheet' type='text/css' href='resources/css/skin-starq-admin.css' id='skin' />");
 document.write("<link rel='stylesheet' type='text/css' href='resources/css/responsive-starq-admin.css' />");
 
